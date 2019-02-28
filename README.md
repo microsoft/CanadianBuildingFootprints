@@ -91,19 +91,19 @@ Maybe. Never overwrite the hard work of other contributors or blindly import dat
 
 | State         | Number of Buildings  | Unzipped MB |
 | ------------- |:-------------:| -----:|
-| [Alberta](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Alabama.zip)|1,937,284|526|
-| [British Columbia](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Alaska.zip)|1,488,776|26|
-| [Manitoba](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arizona.zip)|723,502|584|
-| [New Brunswick](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|351,640|321|
-| [Newfoundland and Labrador](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|265,376|2,537|
-| [Northwest Territories](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|17,326|321|
-| [Nova Scotia](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|400,826|2,537|
-| [Nunavut](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|4,191|321|
-| [Ontario](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|3,832,076|2,537|
-| [Prince Edward Island](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|76,606|321|
-| [Quebec](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|2,535,293|2,537|
-| [Saskatchewan](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|1,013,250|321|
-| [Yukon](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|17,329|2,537|
+| [Alberta](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Alberta.zip)|1,937,284|526|
+| [British Columbia](https://usbuildingdata.blob.core.windows.net/canadian-buildings/BritishColumbia.zip)|1,488,776|26|
+| [Manitoba](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Manitoba.zip)|723,502|584|
+| [New Brunswick](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NewBrunswick.zip)|351,640|321|
+| [Newfoundland and Labrador](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NewfoundlandAndLabrador.zip)|265,376|2,537|
+| [Northwest Territories](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NorthwestTerritories.zip)|17,326|321|
+| [Nova Scotia](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NovaScotia.zip)|400,826|2,537|
+| [Nunavut](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Nunavut.zip)|4,191|321|
+| [Ontario](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Ontario.zip)|3,832,076|2,537|
+| [Prince Edward Island](https://usbuildingdata.blob.core.windows.net/canadian-buildings/PrinceEdwardIsland.zip)|76,606|321|
+| [Quebec](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Quebec.zip)|2,535,293|2,537|
+| [Saskatchewan](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Saskatchewan.zip)|1,013,250|321|
+| [Yukon](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Yukon.zip)|17,329|2,537|
 
 <br>
 <br>
