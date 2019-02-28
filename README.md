@@ -27,26 +27,15 @@ The network foundation is ResNet34 which can be found [here](https://github.com/
 The model is fully-convolutional, meaning that the model can be applied on an image of any size (constrained by GPU memory, 4096x4096 in our case).
 
 #### Training details
-The training set consists of 5 million labeled images. Majority of the satellite images cover diverse residential areas in Canada. For the sake of good set representation, we have enriched the set with samples from various areas covering mountains, glaciers, forests, deserts, beaches, coasts, etc.
+The training set consists of 3 million labeled images. Majority of the satellite images cover diverse residential areas in Canada. For the sake of good set representation, we have enriched the set with samples from various areas covering mountains, glaciers, forests, beaches, coasts, etc.
 Images in the set are of 256x256 pixel size with 1 ft/pixel resolution.
 The training is done with CNTK toolkit using 32 GPUs.
-
-#### Metrics
-These are the intermediate stage metrics we use to track DNN model improvements and they are pixel based.
-The pixel error on the evaluation set is 1.15%.
-Pixel recall/precision = 94.5%/94.5%
 
 ### Polygonization
 ![](/images/polygonization.PNG)
 
 #### Method description
-We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priori building properties, which is, at the moment, manually defined and automatically tuned. Some of these a priori properties are:
-1. The building edge must be of at least some length, both relative and absolute, e.g. 3 meters
-2. Consecutive edge angles are likely to be 90 degrees
-3. Consecutive angles cannot be very sharp, smaller by some auto-tuned threshold, e.g. 30 degrees
-4. Building angles likely have very few dominant angles, meaning all building edges are forming an angle of (dominant angle _&pm;_ n&pi;/2)
-
-In near future, we will be looking to deduce this automatically from existing building information.
+We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priori building properties, which is, at the moment, manually defined and automatically tuned.
 
 #### Metrics
 Building matching metrics:
@@ -87,23 +76,21 @@ Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosys
 #### Should we import the data into OpenStreetMap?
 Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
 
-@Nikola for unzipped MB and .zip urls
-
 | State         | Number of Buildings  | Unzipped MB |
 | ------------- |:-------------:| -----:|
-| [Alberta](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Alabama.zip)|1,937,284|526|
-| [British Columbia](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Alaska.zip)|1,488,776|26|
-| [Manitoba](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arizona.zip)|723,502|584|
-| [New Brunswick](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|351,640|321|
-| [Newfoundland and Labrador](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|265,376|2,537|
-| [Northwest Territories](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|17,326|321|
-| [Nova Scotia](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|400,826|2,537|
-| [Nunavut](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|4,191|321|
-| [Ontario](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|3,832,076|2,537|
-| [Prince Edward Island](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|76,606|321|
-| [Quebec](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|2,535,293|2,537|
-| [Saskatchewan](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|1,013,250|321|
-| [Yukon](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|17,329|2,537|
+| [Alberta](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Alberta.zip)|1,937,284|453|
+| [British Columbia](https://usbuildingdata.blob.core.windows.net/canadian-buildings/BritishColumbia.zip)|1,488,776|349|
+| [Manitoba](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Manitoba.zip)|723,502|175|
+| [New Brunswick](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NewBrunswick.zip)|351,640|74|
+| [Newfoundland and Labrador](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NewfoundlandAndLabrador.zip)|265,376|54|
+| [Northwest Territories](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NorthwestTerritories.zip)|17,326|5|
+| [Nova Scotia](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NovaScotia.zip)|400,826|81|
+| [Nunavut](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Nunavut.zip)|4,191|1|
+| [Ontario](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Ontario.zip)|3,832,076|826|
+| [Prince Edward Island](https://usbuildingdata.blob.core.windows.net/canadian-buildings/PrinceEdwardIsland.zip)|76,606|16|
+| [Quebec](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Quebec.zip)|2,535,293|527|
+| [Saskatchewan](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Saskatchewan.zip)|1,013,250|281|
+| [Yukon](https://usbuildingdata.blob.core.windows.net/canadian-buildings/YukonTerritory.zip)|17,329|4|
 
 <br>
 <br>
