@@ -1,6 +1,6 @@
 Introduction
 -------------------
-This dataset contains  @Nikola 125,192,184 computer generated building footprints in all 50 US states. This data is freely available for download and use.
+This dataset contains 12,663,475 computer generated building footprints in all 50 US states. This data is freely available for download and use.
 
 License
 -------------------
@@ -8,8 +8,7 @@ This data is licensed by Microsoft under the [Open Data Commons Open Database Li
 
 ## FAQ
 #### What the data include:
-@Nikola
-125,192,184 building footprint polygon geometries in all 50 US States in GeoJSON format.
+12,663,475 building footprint polygon geometries from all Canadian provinces and territories in GeoJSON format.
 
 #### What is the GeoJson format?
 GeoJSON is a format for encoding a variety of geographic data structures. 
@@ -52,7 +51,7 @@ In near future, we will be looking to deduce this automatically from existing bu
 #### Metrics
 Building matching metrics:
 
-@Nikola
+@Nikola please update
 | Metric | Value |
 | --- | :---: |
 | Precision | 99.3% |
@@ -65,7 +64,7 @@ We track various metrics to measure the quality of the output:
 
 ![](/images/bldgmetrics.JPG)
 
-@Nikola
+@Nikola please update
 On our evaluation set contains ~15k building. The metrics on the set are:
 - IoU is 0.85, Shape distance is 0.33, Average rotation error is 1.6 degrees
 - The metrics are better or similar compared to OSM building metrics against the labels
@@ -88,24 +87,23 @@ Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosys
 #### Should we import the data into OpenStreetMap?
 Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
 
-@Nikola
+@Nikola for unzipped MB and .zip urls
 
 | State         | Number of Buildings  | Unzipped MB |
 | ------------- |:-------------:| -----:|
-| [Alberta](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Alabama.zip)|2,460,404|526|
-| [British Columbia](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Alaska.zip)|110,746|26|
-| [Manitoba](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arizona.zip)|2,555,395|584|
-| [New Brunswick](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|1,508,657|321|
-| [Newfoundland and Labrador](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|10,988,525|2,537|
-| [Northwest Territories](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|1,508,657|321|
-| [Nova Scotia](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|10,988,525|2,537|
-| [Nunavut](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|1,508,657|321|
-| [Ontario](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|10,988,525|2,537|
-| [Prince Edward Island](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|1,508,657|321|
-| [Quebec](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|10,988,525|2,537|
-| [Saskatchewan](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|1,508,657|321|
-| [Yukon](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|10,988,525|2,537|
-
+| [Alberta](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Alabama.zip)|1,937,284|526|
+| [British Columbia](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Alaska.zip)|1,488,776|26|
+| [Manitoba](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arizona.zip)|723,502|584|
+| [New Brunswick](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|351,640|321|
+| [Newfoundland and Labrador](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|265,376|2,537|
+| [Northwest Territories](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|17,326|321|
+| [Nova Scotia](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|400,826|2,537|
+| [Nunavut](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|4,191|321|
+| [Ontario](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|3,832,076|2,537|
+| [Prince Edward Island](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|76,606|321|
+| [Quebec](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|2,535,293|2,537|
+| [Saskatchewan](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|1,013,250|321|
+| [Yukon](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|17,329|2,537|
 
 <br>
 <br>
