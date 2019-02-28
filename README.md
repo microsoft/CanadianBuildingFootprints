@@ -1,3 +1,114 @@
+Introduction
+-------------------
+This dataset contains  @Nikola 125,192,184 computer generated building footprints in all 50 US states. This data is freely available for download and use.
+
+License
+-------------------
+This data is licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/)
+
+## FAQ
+#### What the data include:
+@Nikola
+125,192,184 building footprint polygon geometries in all 50 US States in GeoJSON format.
+
+#### What is the GeoJson format?
+GeoJSON is a format for encoding a variety of geographic data structures. 
+For Intensive Documentation and Tutorials, Refer to [GeoJson Blog](http://geojson.org/)
+
+#### Creation Details:
+The building extraction is done in two stages:
+1.	Semantic Segmentation – Recognizing building pixels on the aerial image using DNNs
+2.	Polygonization – Converting building pixel blobs into polygons
+### Semantic Segmentation
+![](/images/segmentation.png)
+
+
+#### DNN architecture
+The network foundation is ResNet34 which can be found [here](https://github.com/Microsoft/CNTK/blob/master/PretrainedModels/Image.md#resnet). In order to produce pixel prediction output, we have appended RefineNet upsampling layers described in this [paper](https://arxiv.org/abs/1611.06612).
+The model is fully-convolutional, meaning that the model can be applied on an image of any size (constrained by GPU memory, 4096x4096 in our case).
+
+#### Training details
+The training set consists of 5 million labeled images. Majority of the satellite images cover diverse residential areas in Canada. For the sake of good set representation, we have enriched the set with samples from various areas covering mountains, glaciers, forests, deserts, beaches, coasts, etc.
+Images in the set are of 256x256 pixel size with 1 ft/pixel resolution.
+The training is done with CNTK toolkit using 32 GPUs.
+
+#### Metrics
+These are the intermediate stage metrics we use to track DNN model improvements and they are pixel based.
+The pixel error on the evaluation set is 1.15%.
+Pixel recall/precision = 94.5%/94.5%
+
+### Polygonization
+![](/images/polygonization.PNG)
+
+#### Method description
+We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priori building properties, which is, at the moment, manually defined and automatically tuned. Some of these a priori properties are:
+1. The building edge must be of at least some length, both relative and absolute, e.g. 3 meters
+2. Consecutive edge angles are likely to be 90 degrees
+3. Consecutive angles cannot be very sharp, smaller by some auto-tuned threshold, e.g. 30 degrees
+4. Building angles likely have very few dominant angles, meaning all building edges are forming an angle of (dominant angle _&pm;_ n&pi;/2)
+
+In near future, we will be looking to deduce this automatically from existing building information.
+
+#### Metrics
+Building matching metrics:
+
+@Nikola
+| Metric | Value |
+| --- | :---: |
+| Precision | 99.3% |
+| Recall | 93.5% |
+
+We track various metrics to measure the quality of the output:
+1. Intersection over Union – This is the standard metric measuring the overlap quality against the labels
+2. Shape distance – With this metric we measure the polygon outline similarity
+3. Dominant angle rotation error – This measures the polygon rotation deviation
+
+![](/images/bldgmetrics.JPG)
+
+@Nikola
+On our evaluation set contains ~15k building. The metrics on the set are:
+- IoU is 0.85, Shape distance is 0.33, Average rotation error is 1.6 degrees
+- The metrics are better or similar compared to OSM building metrics against the labels
+
+#### Data Vintage
+The vintage of the footprints depends on the vintage of the underlying imagery. Because Bing Imagery is a composite of multiple sources it is difficult to know the exact dates for individual pieces of data.
+
+#### How good are the data?
+Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, and false positives exist, but most areas look awesome. 
+
+### What is the coordinate reference system?
+EPSG: 4326
+
+#### Will there be more data coming for other geographies?
+Maybe. This is a work in progress.
+
+#### Why is the data being released?
+Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem, and in cooperation with Stats Canada.
+
+#### Should we import the data into OpenStreetMap?
+Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
+
+@Nikola
+
+| State         | Number of Buildings  | Unzipped MB |
+| ------------- |:-------------:| -----:|
+| [Alberta](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Alabama.zip)|2,460,404|526|
+| [British Columbia](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Alaska.zip)|110,746|26|
+| [Manitoba](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arizona.zip)|2,555,395|584|
+| [New Brunswick](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|1,508,657|321|
+| [Newfoundland and Labrador](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|10,988,525|2,537|
+| [Northwest Territories](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|1,508,657|321|
+| [Nova Scotia](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|10,988,525|2,537|
+| [Nunavut](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|1,508,657|321|
+| [Ontario](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|10,988,525|2,537|
+| [Prince Edward Island](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|1,508,657|321|
+| [Quebec](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|10,988,525|2,537|
+| [Saskatchewan](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|1,508,657|321|
+| [Yukon](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|10,988,525|2,537|
+
+
+<br>
+<br>
 
 # Contributing
 
