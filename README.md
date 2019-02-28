@@ -87,23 +87,21 @@ Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosys
 #### Should we import the data into OpenStreetMap?
 Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
 
-@Nikola for unzipped MB and .zip urls
-
 | State         | Number of Buildings  | Unzipped MB |
 | ------------- |:-------------:| -----:|
-| [Alberta](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Alberta.zip)|1,937,284|526|
-| [British Columbia](https://usbuildingdata.blob.core.windows.net/canadian-buildings/BritishColumbia.zip)|1,488,776|26|
-| [Manitoba](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Manitoba.zip)|723,502|584|
-| [New Brunswick](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NewBrunswick.zip)|351,640|321|
-| [Newfoundland and Labrador](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NewfoundlandAndLabrador.zip)|265,376|2,537|
-| [Northwest Territories](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NorthwestTerritories.zip)|17,326|321|
-| [Nova Scotia](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NovaScotia.zip)|400,826|2,537|
-| [Nunavut](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Nunavut.zip)|4,191|321|
-| [Ontario](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Ontario.zip)|3,832,076|2,537|
-| [Prince Edward Island](https://usbuildingdata.blob.core.windows.net/canadian-buildings/PrinceEdwardIsland.zip)|76,606|321|
-| [Quebec](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Quebec.zip)|2,535,293|2,537|
-| [Saskatchewan](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Saskatchewan.zip)|1,013,250|321|
-| [Yukon](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Yukon.zip)|17,329|2,537|
+| [Alberta](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Alberta.zip)|1,937,284|453|
+| [British Columbia](https://usbuildingdata.blob.core.windows.net/canadian-buildings/BritishColumbia.zip)|1,488,776|349|
+| [Manitoba](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Manitoba.zip)|723,502|175|
+| [New Brunswick](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NewBrunswick.zip)|351,640|74|
+| [Newfoundland and Labrador](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NewfoundlandAndLabrador.zip)|265,376|54|
+| [Northwest Territories](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NorthwestTerritories.zip)|17,326|5|
+| [Nova Scotia](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NovaScotia.zip)|400,826|81|
+| [Nunavut](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Nunavut.zip)|4,191|1|
+| [Ontario](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Ontario.zip)|3,832,076|826|
+| [Prince Edward Island](https://usbuildingdata.blob.core.windows.net/canadian-buildings/PrinceEdwardIsland.zip)|76,606|16|
+| [Quebec](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Quebec.zip)|2,535,293|527|
+| [Saskatchewan](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Saskatchewan.zip)|1,013,250|281|
+| [Yukon](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Yukon.zip)|17,329|4|
 
 <br>
 <br>
