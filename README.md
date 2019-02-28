@@ -1,6 +1,6 @@
 Introduction
 -------------------
-This dataset contains 12,663,475 computer generated building footprints in all 50 US states. This data is freely available for download and use.
+This dataset contains 12,663,475 computer generated building footprints in all Canadian provinces and territories. This data is freely available for download and use.
 
 License
 -------------------
