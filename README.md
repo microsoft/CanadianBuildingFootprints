@@ -70,7 +70,7 @@ EPSG: 4326
 Maybe. This is a work in progress.
 
 #### Why is the data being released?
-Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem, and in cooperation with Stats Canada.
+Microsoft has a continued interest in supporting the open data ecosystem.
 
 #### Should we import the data into OpenStreetMap?
 Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
