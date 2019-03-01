@@ -45,7 +45,7 @@ Building matching metrics on our evaluation set:
 | Precision | 97.5% |
 | Recall | 74.5% |
 
-False positive ratio across the board is 7.5%. This is due to wast unpopulated areas and some noticed problems on agricultural fields that we'll try to fix in the next iteration.
+False positive ratio across the board is 7.5%, or one false positive per 4 mi<sup>2</sup> area. We have noticed particular extraction problems on agricultural fields that we'll try to fix in the next iteration.
 
 We track various metrics to measure the quality of the output:
 1. Intersection over Union – This is the standard metric measuring the overlap quality against the labels
