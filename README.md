@@ -38,13 +38,14 @@ The training is done with CNTK toolkit using 32 GPUs.
 We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priori building properties, which is, at the moment, manually defined and automatically tuned.
 
 #### Metrics
-Building matching metrics:
+Building matching metrics on our evaluation set:
 
-@Nikola please update
 | Metric | Value |
 | --- | :---: |
-| Precision | 99.3% |
-| Recall | 93.5% |
+| Precision | 97.5% |
+| Recall | 74.5% |
+
+True positive ratio across the board is 7.5%. This is due to wast unpopulated areas and some noticed problems on agricultural fields that we'll try to fix in the next iteration.
 
 We track various metrics to measure the quality of the output:
 1. Intersection over Union – This is the standard metric measuring the overlap quality against the labels
@@ -53,10 +54,8 @@ We track various metrics to measure the quality of the output:
 
 ![](/images/bldgmetrics.JPG)
 
-@Nikola please update
-On our evaluation set contains ~15k building. The metrics on the set are:
-- IoU is 0.85, Shape distance is 0.33, Average rotation error is 1.6 degrees
-- The metrics are better or similar compared to OSM building metrics against the labels
+On our evaluation set contains ~45k building. The metrics on the set are:
+- IoU is 0.76, Shape distance is 0.43, Average rotation error is 3.7 degrees
 
 #### Data Vintage
 The vintage of the footprints depends on the vintage of the underlying imagery. Because Bing Imagery is a composite of multiple sources it is difficult to know the exact dates for individual pieces of data.
