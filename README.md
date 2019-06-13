@@ -45,7 +45,7 @@ Building matching metrics on our evaluation set:
 | Precision | 98.7% |
 | Recall | 72.3% |
 
-False positive ratio across the board is less than 1%.
+False positive ratio across the board is less than 0.5%.
 
 We track various metrics to measure the quality of the output:
 1. Intersection over Union – This is the standard metric measuring the overlap quality against the labels
