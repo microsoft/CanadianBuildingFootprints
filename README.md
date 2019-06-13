@@ -8,7 +8,7 @@ This data is licensed by Microsoft under the [Open Data Commons Open Database Li
 
 ## FAQ
 #### What the data include:
-12,663,475 building footprint polygon geometries from all Canadian provinces and territories in GeoJSON format.
+11,842,186 building footprint polygon geometries from all Canadian provinces and territories in GeoJSON format.
 
 #### What is the GeoJson format?
 GeoJSON is a format for encoding a variety of geographic data structures. 
@@ -42,10 +42,10 @@ Building matching metrics on our evaluation set:
 
 | Metric | Value |
 | --- | :---: |
-| Precision | 97.5% |
-| Recall | 74.5% |
+| Precision | 98.7% |
+| Recall | 72.3% |
 
-False positive ratio across the board is 7.5%, or one false positive per 4 mi<sup>2</sup> area. We have noticed particular extraction problems on agricultural fields that we'll try to fix in the next iteration.
+False positive ratio across the board is less than 1%.
 
 We track various metrics to measure the quality of the output:
 1. Intersection over Union – This is the standard metric measuring the overlap quality against the labels
@@ -77,19 +77,19 @@ Maybe. Never overwrite the hard work of other contributors or blindly import dat
 
 | Province/Territory         | Number of Buildings  | Unzipped MB |
 | ------------- |:-------------:| -----:|
-| [Alberta](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Alberta.zip)|1,937,284|453|
-| [British Columbia](https://usbuildingdata.blob.core.windows.net/canadian-buildings/BritishColumbia.zip)|1,488,776|349|
-| [Manitoba](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Manitoba.zip)|723,502|175|
-| [New Brunswick](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NewBrunswick.zip)|351,640|74|
-| [Newfoundland and Labrador](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NewfoundlandAndLabrador.zip)|265,376|54|
-| [Northwest Territories](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NorthwestTerritories.zip)|17,326|5|
-| [Nova Scotia](https://usbuildingdata.blob.core.windows.net/canadian-buildings/NovaScotia.zip)|400,826|81|
-| [Nunavut](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Nunavut.zip)|4,191|1|
-| [Ontario](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Ontario.zip)|3,832,076|826|
-| [Prince Edward Island](https://usbuildingdata.blob.core.windows.net/canadian-buildings/PrinceEdwardIsland.zip)|76,606|16|
-| [Quebec](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Quebec.zip)|2,535,293|527|
-| [Saskatchewan](https://usbuildingdata.blob.core.windows.net/canadian-buildings/Saskatchewan.zip)|1,013,250|281|
-| [Yukon](https://usbuildingdata.blob.core.windows.net/canadian-buildings/YukonTerritory.zip)|17,329|4|
+| [Alberta](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/Alberta.zip)|1,777,439|389|
+| [British Columbia](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/BritishColumbia.zip)|1,359,628|301|
+| [Manitoba](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/Manitoba.zip)|632,982|135|
+| [New Brunswick](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/NewBrunswick.zip)|350,989|71|
+| [Newfoundland and Labrador](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/NewfoundlandAndLabrador.zip)|255,568|51|
+| [Northwest Territories](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/NorthwestTerritories.zip)|13,161|3|
+| [Nova Scotia](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/NovaScotia.zip)|402,358|81|
+| [Nunavut](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/Nunavut.zip)|2,875|1|
+| [Ontario](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/Ontario.zip)|3,781,847|808|
+| [Prince Edward Island](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/PrinceEdwardIsland.zip)|76,590|16|
+| [Quebec](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/Quebec.zip)|2,495,801|512|
+| [Saskatchewan](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/Saskatchewan.zip)|681,553|146|
+| [Yukon](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/YukonTerritory.zip)|11,395|3|
 
 <br>
 <br>
