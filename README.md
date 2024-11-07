@@ -77,19 +77,19 @@ Maybe. Never overwrite the hard work of other contributors or blindly import dat
 
 | Province/Territory         | Number of Buildings  | Unzipped MB |
 | ------------- |:-------------:| -----:|
-| [Alberta](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/Alberta.zip)|1,777,439|389|
-| [British Columbia](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/BritishColumbia.zip)|1,359,628|301|
-| [Manitoba](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/Manitoba.zip)|632,982|135|
-| [New Brunswick](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/NewBrunswick.zip)|350,989|71|
-| [Newfoundland and Labrador](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/NewfoundlandAndLabrador.zip)|255,568|51|
-| [Northwest Territories](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/NorthwestTerritories.zip)|13,161|3|
-| [Nova Scotia](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/NovaScotia.zip)|402,358|81|
-| [Nunavut](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/Nunavut.zip)|2,875|1|
-| [Ontario](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/Ontario.zip)|3,781,847|808|
-| [Prince Edward Island](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/PrinceEdwardIsland.zip)|76,590|16|
-| [Quebec](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/Quebec.zip)|2,495,801|512|
-| [Saskatchewan](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/Saskatchewan.zip)|681,553|146|
-| [Yukon](https://usbuildingdata.blob.core.windows.net/canadian-buildings-v2/YukonTerritory.zip)|11,395|3|
+| [Alberta](https://minedbuildings.z5.web.core.windows.net/legacy/canadian-buildings-v2/Alberta.zip)|1,777,439|389|
+| [British Columbia](https://minedbuildings.z5.web.core.windows.net/legacy/canadian-buildings-v2/BritishColumbia.zip)|1,359,628|301|
+| [Manitoba](https://minedbuildings.z5.web.core.windows.net/legacy/canadian-buildings-v2/Manitoba.zip)|632,982|135|
+| [New Brunswick](https://minedbuildings.z5.web.core.windows.net/legacy/canadian-buildings-v2/NewBrunswick.zip)|350,989|71|
+| [Newfoundland and Labrador](https://minedbuildings.z5.web.core.windows.net/legacy/canadian-buildings-v2/NewfoundlandAndLabrador.zip)|255,568|51|
+| [Northwest Territories](https://minedbuildings.z5.web.core.windows.net/legacy/canadian-buildings-v2/NorthwestTerritories.zip)|13,161|3|
+| [Nova Scotia](https://minedbuildings.z5.web.core.windows.net/legacy/canadian-buildings-v2/NovaScotia.zip)|402,358|81|
+| [Nunavut](https://minedbuildings.z5.web.core.windows.net/legacy/canadian-buildings-v2/Nunavut.zip)|2,875|1|
+| [Ontario](https://minedbuildings.z5.web.core.windows.net/legacy/canadian-buildings-v2/Ontario.zip)|3,781,847|808|
+| [Prince Edward Island](https://minedbuildings.z5.web.core.windows.net/legacy/canadian-buildings-v2/PrinceEdwardIsland.zip)|76,590|16|
+| [Quebec](https://minedbuildings.z5.web.core.windows.net/legacy/canadian-buildings-v2/Quebec.zip)|2,495,801|512|
+| [Saskatchewan](https://minedbuildings.z5.web.core.windows.net/legacy/canadian-buildings-v2/Saskatchewan.zip)|681,553|146|
+| [Yukon](https://minedbuildings.z5.web.core.windows.net/legacy/canadian-buildings-v2/YukonTerritory.zip)|11,395|3|
 
 <br>
 <br>
